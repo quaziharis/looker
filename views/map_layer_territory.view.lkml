@@ -1,6 +1,6 @@
 view: map_layer_territory {
   derived_table: {
-    sql: select '614SD' as TERRITORY_CODE,'57198'as ZIP_CODE,'800'as Sales,'43.6746' as Latitude,'-96.7913'as Longitude
+    sql: select '614SD' as TERRITORY_CODE,'57198'as ZIP_CODE,'800'as Sales,'43.6746' as latitude,'-96.7913'as longitude
       union select '614SD','57197', '800','43.6746','-96.7913'
       union select '614SD','57196','800','38.00042','-121.3237'
       union select  '117','95207','200','37.8898','-121.2539'
@@ -36,8 +36,8 @@ view: map_layer_territory {
   dimension: location {
     type: location
     map_layer_name: territory
-    sql_latitude: ${TABLE}."Latitude";;
-    sql_longitude: ${TABLE}."Longitude";;
+    sql_latitude: ${TABLE}."latitude";;
+    sql_longitude: ${TABLE}."longitude";;
   }
 
   measure: sales {
