@@ -36,8 +36,8 @@ view: map_layer_territory {
   dimension: location {
     type: location
     map_layer_name: territory
-    sql_latitude: ${TABLE}."latitude";;
-    sql_longitude: ${TABLE}."longitude";;
+    sql_latitude: ${TABLE}.latitude;;
+    sql_longitude: ${TABLE}.longitude;;
   }
 
   measure: sales {
