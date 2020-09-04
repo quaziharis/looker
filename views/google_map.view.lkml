@@ -1,11 +1,11 @@
 view: google_map {
   derived_table: {
-    sql: select 'GOOGLE MAP' as Google Map,'https://www.google.com/maps/@18.22719,74.5607819,8z'as url
+    sql: select 'GOOGLE MAP' as Google_Map,'https://www.google.com/maps/@18.22719,74.5607819,8z'as url
       ;;
   }
   dimension: Google_Map{
     type: string
-    sql: ${TABLE}."GOOGLE MAP";;
+    sql: ${TABLE}."GOOGLE_MAP";;
   }
   dimension: url {
     type: string
