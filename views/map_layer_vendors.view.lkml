@@ -16,7 +16,6 @@ view: map_layer_vendors {
       union select '37830','50307','CHAPMAN HEATING AND COOLING','31.0865', '-97.4008','005'
       union select '37830','3737','OAK RIDGE POOLS','31.0995','-97.3577','006'
       union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','31.0733', '-97.4864','007'
-      union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','34.2869','-82.2367','007'
       union select '37830','17090','DAN COOK HTG & A/C, INC.','30.0741', '-94.1036','001'
        ;;
   }
