@@ -3,7 +3,7 @@ connection: "snowlooker"
 include: "/views/**/*.view"
 
 map_layer: vendors {
-  file:"VENDORS.topojson"
+  file:"map_(2).topojson"
   property_key: "ZIP_CODE"
 }
 
