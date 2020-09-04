@@ -4,7 +4,7 @@ view: map_layer_vendors {
       union select '37830','3737','OAK RIDGE POOLS','200'
       union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','300'
       union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','300'
-      union select '37830','4341','DAN COOK HTG & A/C, INC.','400'
+      union select '37830','17090','DAN COOK HTG & A/C, INC.','400'
        ;;
   }
 
