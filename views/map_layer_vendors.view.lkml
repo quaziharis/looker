@@ -1,10 +1,10 @@
 view: map_layer_vendors {
   derived_table: {
-    sql: select '37830'as ZIP_CODE,'50307' as VENDOR_ID, 'CHAPMAN HEATING AND COOLING' as VENDOR_NAME,'1' as VENDOR_NO
-      union select '37830','3737','OAK RIDGE POOLS','2'
-      union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','3'
-      union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','3'
-      union select '37830','4341','DAN COOK HTG & A/C, INC.','4'
+    sql: select '37830'as ZIP_CODE,'50307' as VENDOR_ID, 'CHAPMAN HEATING AND COOLING' as VENDOR_NAME,'1000' as VENDOR_NO
+      union select '37830','3737','OAK RIDGE POOLS','200'
+      union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','300'
+      union select '37830','4341','MAIN. TECHNOLOGIES, INC(HVAC)','300'
+      union select '37830','4341','DAN COOK HTG & A/C, INC.','400'
        ;;
   }
 
