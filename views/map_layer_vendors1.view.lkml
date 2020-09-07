@@ -26,7 +26,7 @@ view: map_layer_vendors1 {
   }
   measure: VENDOR_NO {
     type: sum
-    sql: ${TABLE}."VENDER_NO" ;;
+    sql: ${TABLE}."VENDOR_NO" ;;
   }
 
   set: detail {
