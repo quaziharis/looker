@@ -1,9 +1,9 @@
 view: map_layer_vendors1 {
   derived_table: {
-    sql: select '37830'as ZIP_CODE,'50307' as VENDOR_ID
-      union select '37830','3737'
-      union select '37830','4341'
-      union select '37830','17090'
+    sql: select '37830'as ZIP_CODE,'50307' as VENDOR_ID,'1' as VENDOR_NO
+      union select '37830','3737','2'
+      union select '37830','4341','3'
+      union select '37830','17090','4'
        ;;
   }
 
@@ -24,8 +24,12 @@ view: map_layer_vendors1 {
     map_layer_name: vendors1
     sql: ${TABLE}."VENDOR_ID" ;;
   }
+  measure: VENDOR_NO {
+    type: sum
+    sql: ${TABLE}."VENDER_NO" ;;
+  }
 
   set: detail {
-    fields: [ZIP_CODE,VENDOR_ID]
+    fields: [ZIP_CODE,VENDOR_ID,VENDOR_NO]
   }
 }
