@@ -19,8 +19,9 @@ view: map_layer_vendors1 {
   }
 
 
-  measure: VENDOR_ID {
-    type: sum
+  dimension: VENDOR_ID {
+    type: string
+    map_layer_name: vendors1
     sql: ${TABLE}."VENDOR_ID" ;;
   }
 
