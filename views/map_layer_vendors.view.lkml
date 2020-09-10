@@ -60,8 +60,8 @@ view: map_layer_vendors {
     sql_longitude: ${TABLE}.longitude;;
   }
 
-  dimension: VENDOR_ID {
-    type: string
+  measure: VENDOR_ID {
+    type: sum
     sql: ${TABLE}."VENDOR_ID" ;;
   }
   measure: Color_Code {
