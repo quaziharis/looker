@@ -63,16 +63,12 @@ view: map_layer_vendors {
     type: string
     sql: ${TABLE}."VENDOR_ID" ;;
  }
-  measure: VENDOR {
-    type: sum
-    sql: ${TABLE}."VENDOR_ID" ;;
-  }
   measure: Color_Code {
     type: sum
     sql: ${TABLE}."COLOR_CODE" ;;
   }
 
   set: detail {
-    fields: [ZIP_CODE,VENDOR_ID,VENDOR,VENDOR_NAME,VENDOR_TYPE_CODE,COMMERCIAL_PROPERTY_ID,TRADE_CODE,SERVICE_AREA_TYPE_CODE,location,Color_Code]
+    fields: [ZIP_CODE,VENDOR_ID,VENDOR_NAME,VENDOR_TYPE_CODE,COMMERCIAL_PROPERTY_ID,TRADE_CODE,SERVICE_AREA_TYPE_CODE,location,Color_Code]
   }
 }
