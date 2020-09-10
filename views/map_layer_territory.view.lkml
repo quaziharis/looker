@@ -1,6 +1,6 @@
 view: map_layer_territory {
   derived_table: {
-    sql:select '57198' as ZIP_CODE, '614SD' as TERRITORY_CODE, '43.6746' as latitude,'-96.7913' as longitude,'100'as  Sales
+    sql:select '57198' as ZIP_CODE, '614SD' as TERRITORY_CODE, '43.6746' as latitude,'-96.7913' as longitude,'100'as  Color_Code
 union select '57197', '614SD', '43.6746','-96.7913','100'
 union select '57196', '614SD', '43.6746','-96.7913','100'
 union select '95207', '117', '38.0042','-121.3237','3000'
@@ -210,12 +210,12 @@ union select '1021', '545MA', '42.1707','-72.6048','4500'
     sql_longitude: ${TABLE}.longitude;;
   }
 
-  measure: sales {
+  measure: Color_Code {
     type: sum
-    sql: ${TABLE}."SALES" ;;
+    sql: ${TABLE}."COLOR_CODE" ;;
   }
 
   set: detail {
-    fields: [location,TERRITORY_CODE,ZIP_CODE, sales]
+    fields: [location,TERRITORY_CODE,ZIP_CODE, Color_Code]
   }
 }
