@@ -59,8 +59,11 @@ view: map_layer_vendors {
     sql_latitude: ${TABLE}.latitude;;
     sql_longitude: ${TABLE}.longitude;;
   }
-
-  measure: VENDOR_ID {
+  dimension: VENDOR_ID {
+    type: string
+    sql: ${TABLE}."VENDOR_ID" ;;
+ }
+  measure: VENDOR {
     type: sum
     sql: ${TABLE}."VENDOR_ID" ;;
   }
@@ -70,6 +73,6 @@ view: map_layer_vendors {
   }
 
   set: detail {
-    fields: [ZIP_CODE,VENDOR_ID,VENDOR_NAME,VENDOR_TYPE_CODE,COMMERCIAL_PROPERTY_ID,TRADE_CODE,SERVICE_AREA_TYPE_CODE,location,Color_Code]
+    fields: [ZIP_CODE,VENDOR_ID,VENDOR,VENDOR_NAME,VENDOR_TYPE_CODE,COMMERCIAL_PROPERTY_ID,TRADE_CODE,SERVICE_AREA_TYPE_CODE,location,Color_Code]
   }
 }
