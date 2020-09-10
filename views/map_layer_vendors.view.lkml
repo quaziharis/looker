@@ -6,15 +6,13 @@ view: map_layer_vendors {
       union select '37830','17090','DAN COOK HTG & A/C, INC.','SR','217090','PSC','PRIMARY','35.9927','-84.2704','4000'
       union select '37840','17090','DAN COOK HTG & A/C, INC.','SR','217090','PSC','PRIMARY','36.0457', '-84.3669','5000'
       union select '37845','17090','DAN COOK HTG & A/C, INC.','SR','217090','PSC','PRIMARY','36.0912','-84.446','6000'
-      union select '37716','17090','DAN COOK HTG & A/C, INC.','SR','217090','PSC','PRIMARY','35.9761', '-84.1182','7000'
+      union select '37931','17090','DAN COOK HTG & A/C, INC.','SR','217090','PSC','PRIMARY','35.9761', '-84.1182','7000'
       union select '76501','5085','COVE PLUMBING INC.','SR','205085','PLB','SECONDARY','31.0932','-97.3109','8000'
       union select '76502','5085','COVE PLUMBING INC.','SR','205085','PLB','SECONDARY','31.0865', '-97.4008','9000'
       union select '76504','5085','COVE PLUMBING INC.','SR','205085','PLB','SECONDARY','31.0995','-97.3577','10000'
       union select '76513','5085','COVE PLUMBING INC.','SR','205085','PLB','SECONDARY','31.0733', '-97.4864','11000'
       union select '29653','142152','L & M APPLIANCE REPAIR','SR','642832','APL','TERTIARY','34.2869','-82.2367','12000'
       union select '77701','376841','BLUE WATER POOL SERVICE','SR','1618971','SPA','TERTIARY','30.0741', '-94.1036','13000'
-      union select '37830','142153','OAK RIDGE POOLS','SR','123456','ABL','QUATERNARY','35.9927','-84.2704','14000'
-      union select '37843','142153','OAK RIDGE POOLS','SR','123456','ABL','QUATERNARY','36.0137', '-83.0535','15000'
        ;;
   }
 
