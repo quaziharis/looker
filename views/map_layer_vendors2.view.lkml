@@ -31,7 +31,7 @@ view: map_layer_vendors2 {
   }
   dimension: VENDORS_NAME {
     type: string
-    sql: ${TABLE}."VENDORS_NAME" ;;
+    sql: ${TABLE}."VENDOR_NAME" ;;
   }
   measure: Color_Code {
     type: sum
