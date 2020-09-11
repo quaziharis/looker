@@ -1,8 +1,8 @@
 view: map_layer_vendors2 {
   derived_table: {
-    sql: select '37826' as Zip_Code,'vd1'as Vendor_id,'1' as Color_Code,'Vendor_Name_1' as Vendor_Name
-      union select '37828','vd1','1',''
-      union select '37829','vd1','1','Vendor_Name_1'
+    sql: select '37840' as Zip_Code,'vd1'as Vendor_id,'1' as Color_Code,'Vendor_Name_1' as Vendor_Name
+      union select '37719','vd1','1',''
+      union select '37748','vd1','1','Vendor_Name_1'
       union select '37830','vd1&vd2','3','Vendor_Name_1&Vendor_Name_2'
       union select '37931','vd2','2','Vendor_Name_2'
       union select '37932','vd2','2','Vendor_Name_2'
