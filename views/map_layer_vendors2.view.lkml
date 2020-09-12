@@ -9,6 +9,8 @@ view: map_layer_vendors2 {
       union select '37931','2','2','Vendor_Name_2'
       union select '37932','2','2','Vendor_Name_2'
       union select '37771','2','2','Vendor_Name_2'
+      union select '37772','2','2','Vendor_Name_2'
+      union select '37772','3','4','Vendor_Name_3'
       union select '37772','2and3','5','Vendor_Name_2&Vendor_Name_3'
       union select '37934','3','4','Vendor_Name_3'
        ;;
