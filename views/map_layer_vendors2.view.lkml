@@ -5,13 +5,13 @@ view: map_layer_vendors2 {
       union select '37748','1','1','Vendor_Name_1'
       union select '37830','1','1','Vendor_Name_1'
       union select '37830','2','2','Vendor_Name_2'
-      union select '37830','1  2','3','Vendor_Name_1&Vendor_Name_2'
+      union select '37830','1&2','3','Vendor_Name_1&Vendor_Name_2'
       union select '37931','2','2','Vendor_Name_2'
       union select '37932','2','2','Vendor_Name_2'
       union select '37771','2','2','Vendor_Name_2'
       union select '37772','2','2','Vendor_Name_2'
       union select '37772','3','4','Vendor_Name_3'
-      union select '37772','2  3','5','Vendor_Name_2&Vendor_Name_3'
+      union select '37772','2&3','5','Vendor_Name_2&Vendor_Name_3'
       union select '37934','3','4','Vendor_Name_3'
        ;;
   }
@@ -29,7 +29,7 @@ view: map_layer_vendors2 {
 
 
   dimension: VENDOR_ID {
-    type: number
+    type: string
     sql: ${TABLE}."VENDOR_ID" ;;
   }
   dimension: VENDORS_NAME {
