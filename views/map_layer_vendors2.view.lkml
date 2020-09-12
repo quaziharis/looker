@@ -27,7 +27,7 @@ view: map_layer_vendors2 {
 
 
   dimension: VENDOR_ID {
-    type: number
+    type: string
     sql: ${TABLE}."VENDOR_ID" ;;
   }
   dimension: VENDORS_NAME {
