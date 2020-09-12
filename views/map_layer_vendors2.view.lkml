@@ -1,16 +1,16 @@
 view: map_layer_vendors2 {
   derived_table: {
-    sql: select '37840' as Zip_Code,'vd1'as Vendor_id,'1' as Color_Code,'Vendor_Name_1' as Vendor_Name
-      union select '37719','vd1','1',''
-      union select '37748','vd1','1','Vendor_Name_1'
-      union select '37830','vd1','1','Vendor_Name_1'
-      union select '37830','vd2','2','Vendor_Name_2'
-      union select '37830','vd1&vd2','3','Vendor_Name_1&Vendor_Name_2'
-      union select '37931','vd2','2','Vendor_Name_2'
-      union select '37932','vd2','2','Vendor_Name_2'
-      union select '37771','vd2','2','Vendor_Name_2'
-      union select '37772','vd2&vd3','5','Vendor_Name_2&Vendor_Name_3'
-      union select '37934','vd3','4','Vendor_Name_3'
+    sql: select '37840' as Zip_Code,'1'as Vendor_id,'1' as Color_Code,'Vendor_Name_1' as Vendor_Name
+      union select '37719','1','1',''
+      union select '37748','1','1','Vendor_Name_1'
+      union select '37830','1','1','Vendor_Name_1'
+      union select '37830','2','2','Vendor_Name_2'
+      union select '37830','1&2','3','Vendor_Name_1&Vendor_Name_2'
+      union select '37931','2','2','Vendor_Name_2'
+      union select '37932','2','2','Vendor_Name_2'
+      union select '37771','2','2','Vendor_Name_2'
+      union select '37772','2&3','5','Vendor_Name_2&Vendor_Name_3'
+      union select '37934','3','4','Vendor_Name_3'
        ;;
   }
 
@@ -27,8 +27,7 @@ view: map_layer_vendors2 {
 
 
   dimension: VENDOR_ID {
-    type: string
-    map_layer_name: vendors2
+    type: number
     sql: ${TABLE}."VENDOR_ID" ;;
   }
   dimension: VENDORS_NAME {
