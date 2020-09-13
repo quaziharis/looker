@@ -4,7 +4,7 @@ view: map_layer_vendors2 {
     union select '78749', '1636942', '1'
     union select '78748', '1636942', '1'
     union select '78747', '1636942', '1'
-    union select '78747', '1621182', '2'
+   -- union select '78747', '1621182', '2'
     union select '78747', '1636942&1621182', '3'
     union select '78745', '1636942', '1'
     union select '78745', '1621182', '2'
