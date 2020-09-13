@@ -194,8 +194,7 @@ union select '1021', '545MA', '42.1707','-72.6048','4500'
   }
 
   dimension: TERRITORY_CODE {
-    type: string
-    map_layer_name: territory
+    type: number
     sql: ${TABLE}."TERRITORY_CODE" ;;
   }
   dimension: ZIP_CODE {
