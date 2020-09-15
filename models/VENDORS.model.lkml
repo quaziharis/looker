@@ -14,3 +14,6 @@ explore:google_map {
 explore:pushpin_map {
   label: "PushPin_map"
   view_name:pushpin_map}
+explore:volume_map {
+  label: "volume_map"
+  view_name:volume_map}
