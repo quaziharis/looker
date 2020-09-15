@@ -12,5 +12,5 @@ explore:google_map {
   label: "GOOGLE MAP"
   view_name:google_map}
 explore:pushpin_map {
-  label: "GOOGLE MAP"
+  label: "PushPin_map"
   view_name:pushpin_map}
