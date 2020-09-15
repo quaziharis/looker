@@ -11,3 +11,6 @@ explore: map_layer_vendors {}
 explore:google_map {
   label: "GOOGLE MAP"
   view_name:google_map}
+explore:pushpin_map {
+  label: "GOOGLE MAP"
+  view_name:pushpin_map}
