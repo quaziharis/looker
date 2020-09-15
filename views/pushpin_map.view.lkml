@@ -108,9 +108,9 @@ union select '959', '310,  GOVERNMENT AVE PO BOX 1317,FL,32583', '30.577638', '-
     drill_fields: [detail*]
   }
 
-  dimension: Addrerss {
+  dimension: Address {
     type: string
-    sql: ${TABLE}."Address" ;;
+    sql: ${TABLE}."ADDRESS" ;;
   }
   dimension: ZIP_CODE {
     type: zipcode
@@ -128,6 +128,6 @@ union select '959', '310,  GOVERNMENT AVE PO BOX 1317,FL,32583', '30.577638', '-
   }
 
   set: detail {
-    fields: [location,Addrerss,ZIP_CODE, Vendor_id]
+    fields: [location,Address,ZIP_CODE, Vendor_id]
   }
 }
