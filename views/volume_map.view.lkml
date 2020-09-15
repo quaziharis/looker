@@ -127,7 +127,7 @@ union select '1387942', '3279WYOMING DRIVEAK99623', '61.5463', '-149.59', '99623
     type: string
     sql: ${TABLE}."VENDOR_ID" ;;
   }
-  measure: Number_of_contracts {
+  dimension: Number_of_contracts {
     type: number
     sql: ${TABLE}."NUMBER_OF_CONTRACTS" ;;
   }
