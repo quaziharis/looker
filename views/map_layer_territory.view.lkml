@@ -211,7 +211,8 @@ union select '1021', '545MA', '42.1707','-72.6048','4500'
 
   measure: Color_Code {
     type: sum
-    sql: ${TABLE}."COLOR_CODE" ;;
+    sql: ${TABLE}."COLOR_CODE";;
+    hidden: yes
   }
 
   set: detail {
