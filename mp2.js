@@ -24,6 +24,8 @@ const visObject ={
   },
   create: function(element, config) {
     element.innerHTML = `
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
           <style>
             .mapchart{
               fill: #005DAA;
@@ -81,9 +83,9 @@ const visObject ={
                    .attr("height", height)
                    .append("g")
 
-  // var projection = d3.geo.equirectangular()
-  //                     .scale(170)
-  //                     .translate([width / 2, height / 2]);
+   var projection = d3.geo.equirectangular()
+                      .scale(170)
+                      .translate([width / 2, height / 2]);
 
    var geoPath = d3.geoPath()
          .projection(projection);
