@@ -24,6 +24,9 @@ const visObject ={
   },
   create: function(element, config) {
     element.innerHTML = `
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 
           <style>
             .mapchart{
@@ -60,9 +63,7 @@ const visObject ={
               stroke-width: 5;
               }
           </style>
-        `
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+        `;
 
         this.tooltip = d3.select(element).append('div').attr('class', 'map-tip')
         this.svg = d3.select(element).append('svg')
@@ -84,7 +85,7 @@ const visObject ={
                    .attr("height", height)
                    .append("g")
 
-   var projection = d3.geo.equirectangular()
+   var projection = geoEquirectangular()
                       .scale(170)
                       .translate([width / 2, height / 2]);
 
