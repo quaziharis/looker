@@ -81,9 +81,9 @@ const visObject ={
                    .attr("height", height)
                    .append("g")
 
-   var projection = d3.geo.equirectangular()
-                      .scale(170)
-                      .translate([width / 2, height / 2]);
+  // var projection = d3.geo.equirectangular()
+  //                     .scale(170)
+  //                     .translate([width / 2, height / 2]);
 
    var geoPath = d3.geoPath()
          .projection(projection);
