@@ -73,7 +73,7 @@ const visObject ={
    var width = 900,
        height = 600;
 
-   var d3 = d3v4;
+   var d3 = d3;
 
    const svg = this.svg
                    .html('')
