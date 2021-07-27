@@ -72,6 +72,9 @@ const visObject ={
  updateAsync: function(data, element, config, queryResponse, details, doneRendering){
    var width = 900,
        height = 600;
+
+   var d3 = d3v4;
+
    const svg = this.svg
                    .html('')
                    .attr("width", width)
