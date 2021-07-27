@@ -24,8 +24,7 @@ const visObject ={
   },
   create: function(element, config) {
     element.innerHTML = `
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+
           <style>
             .mapchart{
               fill: #005DAA;
@@ -62,6 +61,8 @@ const visObject ={
               }
           </style>
         `
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 
         this.tooltip = d3.select(element).append('div').attr('class', 'map-tip')
         this.svg = d3.select(element).append('svg')
