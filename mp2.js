@@ -81,7 +81,7 @@ const visObject ={
                    .attr("height", height)
                    .append("g")
 
-   var projection = d3.geoEquirectangular()
+   var projection = d3.geo.equirectangular()
                       .scale(170)
                       .translate([width / 2, height / 2]);
 
