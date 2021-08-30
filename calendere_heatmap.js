@@ -307,4 +307,3 @@ if (!Array.prototype.find) {
   };
 
 }
-  looker.plugins.visualizations.add(viz);
