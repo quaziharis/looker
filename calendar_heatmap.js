@@ -1,3 +1,4 @@
+
 function calendarHeatmap() {
   // defaults
   var width = 750;
@@ -305,5 +306,5 @@ if (!Array.prototype.find) {
     }
     return undefined;
   };
-
 }
+/* jshint ignore:end */
