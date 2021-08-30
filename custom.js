@@ -5,12 +5,12 @@ const visObject ={
   **/
   options: {
     first_option: {
-    	type: "string",
+      type: "string",
       label: "My First Option",
       default: "Default Value"
     },
     second_option: {
-    	type: "number",
+      type: "number",
       label: "My Second Option",
       default: 42
     }
@@ -20,7 +20,7 @@ const visObject ={
           <style>
             .mapchart{
               fill: #005DAA;
-             
+
             }
             .groups text {
               font-size: 2em;
@@ -32,7 +32,7 @@ const visObject ={
               position: absolute;
               top: 10px;
               left: 20px;
-              
+
             }
             .graticule {
               fill: none;
@@ -53,18 +53,18 @@ const visObject ={
               }
           </style>
         `
-    
+
         this.tooltip = d3.select(element).append('div').attr('class', 'map-tip')
         this.svg = d3.select(element).append('svg')
   },
-   
+
     /**
      * UpdateAsync is the function that gets called (potentially) multiple times. It receives
      * the data and should update the visualization with the new data.
      **/
  updateAsync: function(data, element, config, queryResponse, details, doneRendering){
-   var width = 900, 
-       height = 600; 
+   var width = 900,
+       height = 600;
    const svg = this.svg
                    .html('')
                    .attr("width", width)
@@ -74,18 +74,18 @@ const visObject ={
    var projection = d3.geoEquirectangular()
                       .scale(170)
                       .translate([width / 2, height / 2]);
- 
+
    var geoPath = d3.geoPath()
          .projection(projection);
-   
+
    var graticule = d3.geoGraticule();
-   
+
    formattedData = []
    data.forEach(function(d) {
          formattedData.push
            var dimension = queryResponse.fields.dimension_like
            var measure = queryResponse.fields.measure_like[0]
-         
+
        });
    d3.queue()
      .defer(d3.json,"https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json")
@@ -106,12 +106,12 @@ const visObject ={
         .attr("class","country");
     // add circles to svg
      svg.selectAll("circle")
-		    .data([aa,bb,cc,dd]).enter()
-		    .append("circle")
-		    .attr("cx", function (d) { console.log(projection(d)); return projection(d)[0]; })
-		    .attr("cy", function (d) { return projection(d)[1]; })
-		    .attr("r", "8px")
-		    .attr("fill", "red")
+        .data([aa,bb,cc,dd]).enter()
+        .append("circle")
+        .attr("cx", function (d) { console.log(projection(d)); return projection(d)[0]; })
+        .attr("cy", function (d) { return projection(d)[1]; })
+        .attr("r", "8px")
+        .attr("fill", "red")
    }
    doneRendering()
  }
