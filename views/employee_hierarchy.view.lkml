@@ -28,4 +28,15 @@ view: employee_hierarchy {
               when ${top_manager} = 'Brett Worthington' then 'Real Estate'
         end      ;;
   }
+
+  dimension: group_id {
+    type: number
+    sql: case when ${department} = 'Engineering' then 11
+              when ${department} = 'Operations' then 12
+              when ${department} = 'Marketing'  then 5
+              when ${department} = 'Marketing' then 5
+              when ${department} = 'Finance' then 6
+              when ${department} = 'Real Estate' then 13
+        end      ;;
+  }
 }
