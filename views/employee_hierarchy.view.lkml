@@ -5,7 +5,8 @@ view: employee_hierarchy {
          union select 'kanika.a@vcreatek.com', 'Jason Marshall'
          union select 'namita.c@vcreatek.com', 'Raj Midha'
          union select 'ninad.t@vcreatek.com', 'Brian Turcotte'
-         union select  'sufiyan@vcreatek.com', 'Brett Worthington';;
+         union select  'sufiyan@vcreatek.com', 'Brett Worthington'
+         union select  'quaziharis@gmail.com', 'Namita Chimulkar';;
   }
 
   dimension: email {
