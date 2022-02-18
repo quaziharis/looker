@@ -31,7 +31,7 @@ view: employee_hierarchy {
   }
 
   dimension: group_id {
-    type: number
+    type: string
     sql: case when ${department} = 'Engineering' then 11
               when ${department} = 'Operations' then 12
               when ${department} = 'Marketing'  then 5
