@@ -6,14 +6,14 @@ warnings.filterwarnings("ignore")
 
 
 # open the config file to get API credentials and Looker hostname where open('config.yml') is f:
-f=open('config.yaml','r',encoding='utf8')
-params = yaml.load(f,Loader=yaml.FullLoader)
-f.close()
+# f=open('config.yaml','r',encoding='utf8')
+# params = yaml.load(f,Loader=yaml.FullLoader)
+# f.close()
 
 
-base_url = params['hosts']['host']
-client_id = params['hosts']['secret']
-client_secret = params['hosts']['token']
+base_url = 'https://vcreatek.cloud.looker.com:19999'
+client_id = 'Cj8ct2q5kbdd9dFywvHM' 
+client_secret = 'SXbzqw8D3hykhrYZZfX7Q2wz'
 
 os.environ["LOOKERSDK_BASE_URL"] = base_url #If your looker URL has .cloud in it (hosted on GCP), do not include :19999 (ie: https://your.cloud.looker.com).
 os.environ["LOOKERSDK_API_VERSION"] = "3.1" #3.1 is the default version. You can change this to 4.0 if you want.
