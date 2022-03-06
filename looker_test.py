@@ -32,8 +32,7 @@ my_user = sdk.me()
 
 body={
     "dashboard_id":98,
-    "crontab":"0 0 * * 2"
-
+    "crontab":"0 0 * * 3"
 }
 
 sdk.update_scheduled_plan(scheduled_plan_id=158,body=body)
